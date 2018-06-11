@@ -368,6 +368,16 @@ bool process_record_quantum(keyrecord_t *record) {
       rgblight_decrease_val();
     }
     return false;
+  case RGB_SPI:
+    if (record->event.pressed) {
+      rgblight_increase_speed();
+    }
+    return false;
+  case RGB_SPD:
+    if (record->event.pressed) {
+      rgblight_decrease_speed();
+    }
+    return false;
   case RGB_MODE_PLAIN:
     if (record->event.pressed) {
       rgblight_mode(1);
@@ -432,7 +442,12 @@ bool process_record_quantum(keyrecord_t *record) {
       }
     }
     return false;
-  #endif
+  case RGB_MODE_RGBTEST:
+    if (record->event.pressed) {
+      rgblight_mode(35);
+    }
+    return false;
+  #endif // defined(RGBLIGHT_ENABLE) || defined(RGB_MATRIX_ENABLE)
     #ifdef PROTOCOL_LUFA
     case OUT_AUTO:
       if (record->event.pressed) {
