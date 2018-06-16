@@ -62,90 +62,90 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * | Tab  |   Q  |   W  |   J  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |EsCtrl|   A  |   S  |   D  |   F  |   G  |   H  |   N  |   E  |   L  |   ;  |  "   |
+ * |EsCtrl|   A  |   S  |   D  |   F  |   G  |   K  |   N  |   E  |   L  |   ;  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Enter |
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |   M  |   H  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | PAD  | Ctrl | Alt  | GUI  |Lower |Space | Shift| Raise| GUI  | Alt  | Ctrl | PAD  |
  * `-----------------------------------------------------------------------------------'
  */
 [_TARMAK_1] = LAYOUT_ortho_4x12( \
   KC_TAB,   KC_Q,    KC_W,    KC_J,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
-  ESC_CTRL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_N,    KC_E,    KC_L,    KC_SCLN, KC_QUOT, \
-  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
+  ESC_CTRL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_K,    KC_N,    KC_E,    KC_L,    KC_SCLN, KC_QUOT, \
+  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
   PAD,      KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
 ),
 
 /* Tarmak 2
  * ,-----------------------------------------------------------------------------------.
- * | Tab  |   Q  |   W  |   F  |   R  |   G  |   Y  |   U  |   I  |   O  |   P  | Bksp |
+ * | Tab  |   Q  |   W  |   F  |   R  |   B  |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |EsCtrl|   A  |   S  |   D  |   T  |   J  |   H  |   N  |   E  |   L  |   ;  |  "   |
+ * |EsCtrl|   A  |   S  |   D  |   T  |   G  |   K  |   N  |   E  |   L  |   ;  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Enter |
+ * | Shift|   Z  |   X  |   C  |   J  |   V  |   M  |   H  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | PAD  | Ctrl | Alt  | GUI  |Lower |Space | Shift| Raise| GUI  | Alt  | Ctrl | PAD  |
  * `-----------------------------------------------------------------------------------'
  */
 [_TARMAK_2] = LAYOUT_ortho_4x12( \
-  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_R,    KC_G,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
-  ESC_CTRL, KC_A,    KC_S,    KC_D,    KC_T,    KC_J,    KC_H,    KC_N,    KC_E,    KC_L,    KC_SCLN, KC_QUOT, \
-  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
+  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_R,    KC_B,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
+  ESC_CTRL, KC_A,    KC_S,    KC_D,    KC_T,    KC_G,    KC_K,    KC_N,    KC_E,    KC_L,    KC_SCLN, KC_QUOT, \
+  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_J,    KC_V,    KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
   PAD,      KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
 ),
 
 /* Tarmak 3
  * ,-----------------------------------------------------------------------------------.
- * | Tab  |   Q  |   W  |   F  |   J  |   G  |   Y  |   U  |   I  |   O  |   P  | Bksp |
+ * | Tab  |   Q  |   W  |   F  |   J  |   B  |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |EsCtrl|   A  |   R  |   S  |   T  |   D  |   H  |   N  |   E  |   L  |   ;  |  "   |
+ * |EsCtrl|   A  |   R  |   S  |   T  |   G  |   K  |   N  |   E  |   L  |   ;  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Enter |
+ * | Shift|   Z  |   X  |   C  |   D  |   V  |   M  |   H  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | PAD  | Ctrl | Alt  | GUI  |Lower |Space | Shift| Raise| GUI  | Alt  | Ctrl | PAD  |
  * `-----------------------------------------------------------------------------------'
  */
 [_TARMAK_3] = LAYOUT_ortho_4x12( \
-  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_J,    KC_G,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
-  ESC_CTRL, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_L,    KC_SCLN, KC_QUOT, \
-  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
+  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_J,    KC_B,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
+  ESC_CTRL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_K,    KC_N,    KC_E,    KC_L,    KC_SCLN, KC_QUOT, \
+  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
   PAD,      KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
 ),
 
 /* Tarmak 4
  * ,-----------------------------------------------------------------------------------.
- * | Tab  |   Q  |   W  |   F  |   R  |   G  |   J  |   U  |   I  |   Y  |   ;  | Bksp |
+ * | Tab  |   Q  |   W  |   F  |   P  |   B  |   J  |   U  |   I  |   Y  |   ;  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |EsCtrl|   A  |   R  |   S  |   T  |   D  |   H  |   N  |   E  |   L  |   O  |  "   |
+ * |EsCtrl|   A  |   R  |   S  |   T  |   G  |   K  |   N  |   E  |   L  |   O  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Enter |
+ * | Shift|   Z  |   X  |   C  |   D  |   V  |   M  |   H  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | PAD  | Ctrl | Alt  | GUI  |Lower |Space | Shift| Raise| GUI  | Alt  | Ctrl | PAD  |
  * `-----------------------------------------------------------------------------------'
  */
 [_TARMAK_4] = LAYOUT_ortho_4x12( \
-  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_U,    KC_I,    KC_Y,    KC_SCLN,    KC_BSPC, \
-  ESC_CTRL, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_L,    KC_O, KC_QUOT, \
-  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
+  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_U,    KC_I,    KC_Y,    KC_SCLN, KC_BSPC, \
+  ESC_CTRL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_K,    KC_N,    KC_E,    KC_L,    KC_O,    KC_QUOT, \
+  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
   PAD,      KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
 ),
 
-/* Colemak
+/* Colemak Mod DH
  * ,-----------------------------------------------------------------------------------.
- * | Tab  |   Q  |   W  |   F  |   P  |   G  |   J  |   L  |   U  |   Y  |   ;  | Bksp |
+ * | Tab  |   Q  |   W  |   F  |   P  |   B  |   J  |   U  |   I  |   Y  |   ;  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Esc  |   A  |   R  |   S  |   T  |   D  |   H  |   N  |   E  |   I  |   O  |  "   |
+ * |EsCtrl|   A  |   R  |   S  |   T  |   G  |   K  |   N  |   E  |   L  |   O  |  "   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Enter |
+ * | Shift|   Z  |   X  |   C  |   D  |   V  |   M  |   H  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | PAD  | Ctrl | Alt  | GUI  |Lower |Space | Shift| Raise| GUI  | Alt  | Ctrl | PAD  |
  * `-----------------------------------------------------------------------------------'
  */
 [_COLEMAK] = LAYOUT_ortho_4x12( \
-  KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC, \
-  KC_ESC,  KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
-  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT , \
-  PAD,     KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
+  KC_TAB,   KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,    KC_BSPC, \
+  ESC_CTRL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_K,    KC_N,    KC_E,    KC_I,    KC_O, KC_QUOT, \
+  KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT, \
+  PAD,      KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
 ),
 
 /* Lower
