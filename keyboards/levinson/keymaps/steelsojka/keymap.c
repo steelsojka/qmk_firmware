@@ -143,7 +143,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_COLEMAK] = LAYOUT_ortho_4x12( \
   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC, \
-  KC_ESC,  KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
+  ESC_CTRL, KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT , \
   PAD,     KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_RGUI, KC_RALT, KC_RCTL, PAD \
 ),
@@ -152,17 +152,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |   `  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   -  |   =  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |      |      |      |  (   |   {  |   }  |   )  |   _  |   +  |   \  |  |   |
+ * | Del  |      |      |      |  (   |   [  |   ]  |   )  |   _  |   +  |   \  |  |   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |      |      |      |  <   |   [  |   ]  |   >  |   ;  |   =  |      |Enter |
+ * |      |      |      |      |  {   |   <  |   >  |   }  |   ;  |   =  |      |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |      | Enter|      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_4x12( \
   KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_MINUS, KC_EQUAL, KC_BSPC, \
-  KC_DEL,  _______, _______, _______, KC_LPRN, KC_LCBR, KC_RCBR, KC_RPRN, KC_UNDS, KC_PLUS,  KC_BSLS,  KC_PIPE, \
-  _______, _______, _______, _______, KC_LT,   KC_LBRC, KC_RBRC, KC_GT,   KC_SCLN, KC_EQUAL,  _______,  _______, \
+  KC_DEL,  _______, _______, _______, KC_LPRN, KC_LBRC, KC_RBRC, KC_RPRN, KC_UNDS, KC_PLUS,  KC_BSLS,  KC_PIPE, \
+  _______, _______, _______, _______, KC_LCBR, KC_LT,   KC_GT,   KC_RCBR, KC_SCLN, KC_EQUAL, _______,  _______, \
   _______, _______, _______, _______, _______, _______, KC_ENT , _______, KC_MNXT, KC_VOLD,  KC_VOLU,  KC_MPLY \
 ),
 
